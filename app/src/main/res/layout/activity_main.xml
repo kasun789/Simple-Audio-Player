@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#000"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broken Angel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="334dp"
+        android:layout_height="276dp"
+        android:layout_marginVertical="12dp"
+        app:srcCompat="@drawable/download" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:layout_marginVertical="12dp"
+
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/previousBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_skip_previous_24"
+            android:background="#000"
+            />
+        <ImageButton
+            android:id="@+id/playBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_play_circle_filled_24"
+            android:background="@drawable/btn_bg"
+            />
+
+        <ImageButton
+            android:id="@+id/nextBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_skip_next_24"
+            android:background="#000"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
